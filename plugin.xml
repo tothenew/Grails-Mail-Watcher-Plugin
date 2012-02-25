@@ -1,0 +1,39 @@
+<plugin name='mail-watcher' version='0.1' grailsVersion='2.0 &gt; *'>
+  <author>Hitesh Bhatia</author>
+  <authorEmail>hitesh@initelligrape.com</authorEmail>
+  <title>Mail Watcher Plugin</title>
+  <description> This Plugin will poll provided Gmail id for unread mails,And Will save them. </description>
+  <documentation>https://github.com/IntelliGrape/Grails-Mail-Watcher-Plugin/wiki</documentation>
+  <type>MailWatcherGrailsPlugin</type>
+  <resources>
+    <resource>org.grails.plugins.mailwatcher.Email</resource>
+    <resource>org.grails.plugins.mailwatcher.WatcherJob</resource>
+    <resource>org.grails.plugins.mailwatcher.EmailReaderService</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='org.tmatesoft.svnkit' name='svnkit' version='1.2.3.5521' />
+    </compile>
+    <runtime>
+      <dependency group='javax.mail' name='mail' version='1.4.1' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='hibernate' version='2.0.1' />
+      <plugin group='org.grails.plugins' name='quartz' version='0.4.2' />
+    </runtime>
+    <build>
+      <plugin group='org.grails.plugins' name='release' version='1.0.1' />
+    </build>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
