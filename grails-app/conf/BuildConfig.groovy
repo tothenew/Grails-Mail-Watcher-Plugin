@@ -4,11 +4,6 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.target.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
-grails.project.repos.intelligrape.url = "http://plugin-repo.qa3.intelligrape.net/artifactory/plugins-release-local"
-grails.project.repos.default = "intelligrape"
-grails.project.repos.intelligrape.type = "maven"
-grails.project.repos.intelligrape.username = "admin"
-grails.project.repos.intelligrape.password = "password"
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
