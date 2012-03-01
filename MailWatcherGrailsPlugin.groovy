@@ -1,4 +1,4 @@
-class MailWatcherGrailsPlugin {
+gutclass MailWatcherGrailsPlugin {
     // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
@@ -18,7 +18,7 @@ class MailWatcherGrailsPlugin {
     def description = ''' This Plugin will poll provided Gmail id for unread mails,And Will save them. '''
 
     // URL to the plugin's documentation
-    def documentation = "https://github.com/IntelliGrape/Grails-Mail-Watcher-Plugin/wiki"
+    def documentation = "https://github.com/IntelliGrape/Grails-Mail-Watcher-Plugin/wiki/Grails-Mail-Watcher-Plugin"
 
     // Extra (optional) plugin metadata
 
